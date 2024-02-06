@@ -1,0 +1,84 @@
+.content {
+    background-color: #FADADD;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.content a::before {
+    content: "🔗 ";
+    margin-right: 5px;
+}
+
+.content a::after {
+    content: " 🔗";
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.project-box {
+    width: 100%;
+    margin: 40px auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align:justify;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.project-box img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+.project-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.project-box p::first-letter{
+    font-weight: bold;
+}
+.project-box table {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+
+.project-box .image-col {
+    width: 25%;
+    text-align: center;
+}
+
+
+.project-box .info-col {
+    width: 75%;
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .project-box {
+        max-width: 100%; /* Full width for smaller screens */
+    }
+}
